@@ -1,0 +1,90 @@
+[
+{
+    "model": "store.category",
+    "pk": 1,
+    "fields": {
+        "title": "giant",
+        "description": "slrsrolbnosrbn"
+    }
+},
+{
+    "model": "store.category",
+    "pk": 2,
+    "fields": {
+        "title": "cube",
+        "description": ""
+    }
+},
+{
+    "model": "store.category",
+    "pk": 4,
+    "fields": {
+        "title": "pinarello",
+        "description": ""
+    }
+},
+{
+    "model": "store.category",
+    "pk": 5,
+    "fields": {
+        "title": "santa crus",
+        "description": ""
+    }
+},
+{
+    "model": "store.category",
+    "pk": 6,
+    "fields": {
+        "title": "srgbv",
+        "description": ""
+    }
+},
+{
+    "model": "store.product",
+    "pk": 1,
+    "fields": {
+        "title": "talon",
+        "description": "l;srjkbnkwrsb",
+        "category": 1,
+        "created": "2026-06-01T07:24:55.645Z",
+        "price": "10.00",
+        "image": "https://www.giantsydney.com.au/cdn/shop/files/MY25Talon291_ColorACharcoal.jpg?v=1728612309"
+    }
+},
+{
+    "model": "store.product",
+    "pk": 2,
+    "fields": {
+        "title": "eatnst",
+        "description": "aethbr",
+        "category": 1,
+        "created": "2026-06-01T07:44:31.708Z",
+        "price": "34.00",
+        "image": "https://www.giantsydney.com.au/cdn/shop/files/MY25Talon291_ColorACharcoal.jpg?v=1728612309"
+    }
+},
+{
+    "model": "store.product",
+    "pk": 6,
+    "fields": {
+        "title": "23",
+        "description": "23",
+        "category": 1,
+        "created": "2026-06-01T09:34:35.655Z",
+        "price": "2.00",
+        "image": "https://www.giantsydney.com.au/cdn/shop/files/MY25Talon291_ColorACharcoal.jpg?v=1728612309"
+    }
+},
+{
+    "model": "store.product",
+    "pk": 7,
+    "fields": {
+        "title": "23",
+        "description": "23",
+        "category": 1,
+        "created": "2026-06-01T09:35:17.615Z",
+        "price": "2.00",
+        "image": "https://www.giantsydney.com.au/cdn/shop/files/MY25Talon291_ColorACharcoal.jpg?v=1728612309"
+    }
+}
+]
