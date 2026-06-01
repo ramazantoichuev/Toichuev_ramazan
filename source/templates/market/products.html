@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container">
+    <div class="row row-cols-md-3 g-4">
+        {% for product in products %}
+            <div class="col">
+                <div class="card border-secondary h-100 mb-3">
+                    <img src="{{ product.image }}" class="card-img-top" alt="{{ product.title }}" style="height: 200px; object-fit: cover;">
+                    <div class="card-header d-flex justify-content-between">
+                        <h5 class="card-title">Название: {{ product.title }}</h5>
+                    </div>
+                    <div class="card-body text-secondary d-flex flex-column">
+                        <p>Котегории : {{ product.category }}</p>
+                        <p>Цена : {{ product.price }}</p>
+                        <div class="d-flex justify-content-between">
+                            <a href="{% url 'product' product.id %}" class="card-link">
+                                Подробнее
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {% empty %}
+            <p>Нет данных</p>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}
