@@ -39,3 +39,10 @@ def category_add_view(request):
         )
         return redirect("products")
     return None
+
+def product_delete(request, id):
+    product = get_object_or_404(Product, id=id)
+    if request.method == 'POST':
+        product.delete()
+        return redirect("products")
+    return render(request, "market/product_delete.html", {"product": product})
