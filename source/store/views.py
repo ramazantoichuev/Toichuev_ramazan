@@ -4,7 +4,7 @@ from .models import Product, Category
 
 
 def products_view(request):
-    products = Product.objects.all()
+    products = Product.objects.filter(remainder__gte=1).order_by('category__title','title')
     return render(request, "market/products.html", {'products':products})
 
 
@@ -22,6 +22,7 @@ def product_add_view(request):
             title=request.POST.get("title"),
             description=request.POST.get("description"),
             category_id=request.POST.get("category"),
+            remainder = request.POST.get("remainder"),
             price=request.POST.get("price"),
             image=request.POST.get("image"),
         )

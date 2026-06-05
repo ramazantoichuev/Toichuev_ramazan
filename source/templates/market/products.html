@@ -12,6 +12,7 @@
                     </div>
                     <div class="card-body text-secondary d-flex flex-column">
                         <p>Котегории : {{ product.category }}</p>
+                        <p>Остаток: {{product.remainder}}</p>
                         <p>Цена : {{ product.price }}</p>
                         <div class="d-flex justify-content-between">
                             <a href="{% url 'product' product.id %}" class="card-link">

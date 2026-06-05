@@ -15,12 +15,18 @@
                 Категория: {{ product.category }}
             </p>
 
-            <p>
-                Описание: {{ product.description }}
-            </p>
+           <p> Описание:
+               {% if product.description %} {{ product.description }}
+               {% else %} Нет описания {% endif %}
+           </p>
             <h4 class="text-success">
                 Цена: {{ product.price }}
             </h4>
+
+            <p>
+                Остаток: {{product.remainder}}
+            </p>
+
             <p class="text-secondary">
                 Добавлено: {{ product.created }}
             </p>
