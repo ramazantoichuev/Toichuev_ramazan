@@ -11,7 +11,7 @@ admin.site.register(Category, CategoryAdmin)
 
 
 class ProductAdmin(admin.ModelAdmin):
-    list_display = ('id', 'title', 'category', 'price', 'created')
+    list_display = ('id', 'title', 'category', 'price', 'remainder', 'created')
     search_fields = ('title', 'description')
     list_filter = ('category', 'created')
     ordering = ('-created',)
