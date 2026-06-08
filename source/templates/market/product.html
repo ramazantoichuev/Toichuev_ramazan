@@ -31,6 +31,14 @@
                 Добавлено: {{ product.created }}
             </p>
 
+            <a href="{% url 'update' product.id %}" class="card-link">
+                Изменить
+            </a>
+
+            <a href="{% url 'delete' product.id %}" class="card-link text-danger">
+                Удалить
+            </a>
+
         </div>
     </div>
 </div>

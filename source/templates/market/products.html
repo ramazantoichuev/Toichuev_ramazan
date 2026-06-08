@@ -1,6 +1,12 @@
 {% extends "base.html" %}
 
 {% block content %}
+<form method="GET" class="d-flex gap-2 mb-4">
+    {{ form.search_title }}
+    <button type="submit" class="btn btn-primary mt-2">
+        Поиск
+    </button>
+</form>
 <div class="container">
     <div class="row row-cols-md-3 g-4">
         {% for product in products %}
@@ -17,10 +23,6 @@
                         <div class="d-flex justify-content-between">
                             <a href="{% url 'product' product.id %}" class="card-link">
                                 Подробнее
-                            </a>
-                            </a>
-                            <a href="{% url 'delete' product.id %}" class="card-link text-danger">
-                                Удалить
                             </a>
                         </div>
                     </div>
